@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BooksApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="android:colorSecondary">@color/main_color</item> -->
+    </style>
+
+    <style name="Theme.BooksApp" parent="Base.Theme.BooksApp" />
+</resources>

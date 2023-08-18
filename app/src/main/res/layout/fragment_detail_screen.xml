@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.detail.DetailScreen"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/main_color"
+        app:navigationIcon="@drawable/back_icon"
+        />
+
+    <TextView
+        android:id="@+id/tv_toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18ssp"
+        android:layout_marginStart="@dimen/_44sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/detail_toolbar"
+        app:layout_constraintTop_toTopOf="@id/detail_toolbar"
+         />
+
+    <ImageView
+        android:id="@+id/detail_imageview"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_180sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail_toolbar"
+        android:layout_marginTop="@dimen/_48sdp"
+        android:scaleType="fitCenter"
+        />
+
+    <TextView
+        android:id="@+id/tv_detail_book_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail_imageview"
+        android:layout_marginTop="@dimen/_48sdp"
+        android:text="Book Name : "
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_marginStart="@dimen/_68sdp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_detail_book_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/get_book_name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        android:layout_marginEnd="@dimen/_68sdp"
+        android:layout_marginStart="@dimen/_4sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_detail_book_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_detail_book_title"
+        app:layout_constraintTop_toTopOf="@+id/tv_detail_book_title" />
+
+    <TextView
+        android:id="@+id/tv_author_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/author_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_detail_book_title"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        android:layout_marginStart="@dimen/_68sdp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_author_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Get Author Name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        android:textAlignment="center"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_68sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_author_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_author_title"
+        app:layout_constraintTop_toTopOf="@+id/tv_author_title" />
+
+    <TextView
+        android:id="@+id/tv_publisher_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Publisher :"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_author_title"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:layout_marginStart="@dimen/_68sdp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_publisher_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/publisher_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_68sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_publisher_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_publisher_title"
+        app:layout_constraintTop_toTopOf="@+id/tv_publisher_title"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tv_price_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Price : "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_publisher_title"
+        android:layout_marginStart="@dimen/_68sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        android:layout_marginEnd="@dimen/_68sdp"
+        android:layout_marginStart="@dimen/_4sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_price_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_price_title"
+        app:layout_constraintTop_toTopOf="@+id/tv_price_title"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/tv_seller_cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_price_title"
+        android:layout_marginTop="@dimen/_32sdp"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:strokeColor="@color/main_color"
+        app:strokeWidth="@dimen/_2sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardBackgroundColor="@color/high_light_grey"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/tv_seller_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14ssp"
+            android:text="@string/best_seller_book"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/main_color"
+            android:textStyle="bold"
+            android:drawableEnd="@drawable/star_icon"
+            android:drawablePadding="@dimen/_6sdp"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

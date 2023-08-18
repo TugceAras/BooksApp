@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BooksApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="detail">Detail</string>
+    <string name="price">Price</string>
+    <string name="book_name">Book name</string>
+    <string name="top">TOP</string>
+    <string name="books">BOOKS</string>
+    <string name="get_book_name">Get Book Name</string>
+    <string name="author_name">Author Name :</string>
+    <string name="publisher_name">Publisher Name</string>
+    <string name="best_seller_book">BEST SELLER BOOK</string>
+</resources>
